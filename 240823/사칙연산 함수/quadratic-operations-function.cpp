@@ -4,12 +4,16 @@ using namespace std;
 void cal(int a, char o, int c){
     if(o == '+'){
         cout << a << ' ' << o << ' ' <<  c << " = " << a + c;
+        return;
     } else if(o == '-'){
         cout << a << ' ' << o << ' ' <<  c << " = " << a - c;
+        return;
     } else if(o == '/'){
         cout << a << ' ' << o << ' ' <<  c << " = " << a / c;
+        return;
     } else if(o == '*'){
         cout << a << ' ' << o << ' ' <<  c << " = " << a * c;
+        return;
     }
     cout << "False";
 }
