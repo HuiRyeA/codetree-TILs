@@ -1,17 +1,17 @@
 #include <iostream>
 using namespace std;
 
-int cal(int a, char o, int c){
+void cal(int a, char o, int c){
     if(o == '+'){
-        return a + c;
+        cout << a << ' ' << o << ' ' <<  c << " = " << a + c;
     } else if(o == '-'){
-        return a - c;
+        cout << a << ' ' << o << ' ' <<  c << " = " << a - c;
     } else if(o == '/'){
-        return a / c;
+        cout << a << ' ' << o << ' ' <<  c << " = " << a / c;
     } else if(o == '*'){
-        return a * c;
+        cout << a << ' ' << o << ' ' <<  c << " = " << a * c;
     }
-    return 0;
+    cout << "False";
 }
 
 int main() {
@@ -20,6 +20,6 @@ int main() {
     char o;
 
     cin >> a >> o >> c;
-    cout << a << ' ' << o << ' ' <<  c << " = " << cal(a, o ,c);
+    cal(a, o, c);
     return 0;
 }
